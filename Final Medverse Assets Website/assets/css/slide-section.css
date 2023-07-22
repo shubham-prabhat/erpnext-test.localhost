@@ -1,0 +1,303 @@
+.banner-button a {
+  display: inline-block;
+}
+
+
+
+/* Custom styles */
+#medverseBox .title-wrapper h4,
+#medverseBox .title-wrapper p {
+  display: inline-block;
+  vertical-align: top;
+}
+#medverseBox .title-wrapper .slogan {
+  font-size: small;
+  white-space: nowrap;
+  margin-top: 5px; /* Adjust this value if needed */
+}
+
+
+
+
+#medverseBox {
+  line-height: 2.5;
+  margin-top: 25px;
+}
+
+
+ .section-header {
+    margin-bottom: 20px;
+  }
+  .section-header p {
+    line-height: 1.5; /* You can adjust the value (e.g., 1.2, 1.8) to your preference */
+  }
+
+
+  #medverseBox .title-wrapper h4 {
+    color: purple;
+    font-weight: bold;
+    font-size: 70px;
+  }
+
+  #medverseBox > p:nth-of-type(1) {
+    color: rgb(104, 5, 157); /* You can replace 'red' with your desired color for the first <p> tag */
+    font-weight: bold;
+    line-height: 1.8;
+  }
+
+  #medverseBox .description-box > p {
+    color: black(216, 42, 216); /* You can replace 'blue' with your desired color for the second <p> tag */
+    font-size: 16px;
+  }
+
+
+
+
+  #banner-button-1-2 {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* Add "auto" between the columns */
+    align-items: center; /* To center the items vertically */
+  }
+  
+  #banner-button-1-2 button {
+    border-radius: 30px; /* Adjust the value to your desired roundness */
+    margin: 5px; /* Optional: To add some space between the buttons */
+  }
+  
+  /* Optional margin for larger screens */
+  #banner-button-1-2 {
+    margin: 20px;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    #banner-button-1-2 {
+      margin: 10px;
+    }
+  }
+  
+  
+
+
+
+
+
+/* CSS for changing the background color of individual buttons */
+#banner-button-1-2 button:nth-child(1) {
+  /* background-color: rgb(172, 62, 245); Change this to the desired color for Button 1 */
+  background: linear-gradient(90deg, rgb(229, 223, 240) 0%, rgba(198,61,255,1) 100%);
+}
+
+#banner-button-1-2 button:nth-child(3) {
+  /* background-color: rgb(172, 62, 245); Change this to the desired color for Button 2 */
+  background: linear-gradient(90deg, rgb(229, 223, 240) 0%, rgba(198,61,255,1) 100%);
+}
+
+
+.section-one {
+  margin-top: 100px; /* Add the desired margin-top value */
+}  
+
+/* .title-wrapper {
+  border-bottom: 2px solid red;
+  width: 20%;
+  margin: auto;
+}
+    
+#section2-header {
+  border-bottom: 2px solid red;
+} */
+
+.title-wrapper {
+  border-bottom: 2px solid red;
+  width: 20%;
+  margin: auto;
+}
+/* Your custom CSS goes here */
+.section-one .carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  background: linear-gradient(90deg, rgb(229, 223, 240) 0%, rgba(198,61,255,1) 100%);
+  padding: 10px;
+  color: #fff;
+}
+
+.section-one .carousel-caption h3 {
+  font-size: 20px; /* You can adjust the value as per your requirement */
+}
+
+.section-one .carousel-caption p {
+  font-size: 16px; /* You can adjust the value as per your requirement */
+}
+
+.section-one .carousel-item img {
+  /* width: 646px; Adjust the width as per your new dimension */
+  /* height: 728px; Adjust the height as per your new dimension */
+  width: 100%; 
+  height: 100%; /* Adjust the height as per your new dimension */
+}
+
+.section-two .img-fluid {
+  max-width: 100%;
+  /* height: auto; */
+  height: 100%;
+}
+
+.section-two .box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius:15px;
+  background-color: #caf0f8;
+}
+
+.section-two .icon-img {
+  /* max-width: 80px; Set a fixed size for the icon image */
+  height: auto;
+  margin-bottom: 10px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.box h4 {
+  font-size: 18px; /* Adjust the font size for h4 here */
+  /* Add any other styles you want for h4 */
+}
+
+.box p {
+  font-size: 15px; /* Adjust the font size for h4 here */
+  /* Add any other styles you want for h4 */
+}
+
+.boxes {
+border-radius: 10px;
+}
+/* Increase the font size of the heading and paragraph in the first box of section-one */
+.section-one .col-md-6 .box:first-of-type h4 {
+  font-size: 28px; /* You can adjust the value as per your requirement */
+}
+
+.section-one .col-md-6 .box:first-of-type p {
+  font-size: 20px; /* You can adjust the value as per your requirement */
+}
+
+/* Adjust the layout on small screens (e.g., smartphones) */
+@media (max-width: 767.98px) {
+  .section-one .carousel-caption {
+    position: static;
+    transform: none;
+    text-align: left;
+  }
+
+  .section-one .col-md-6 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Remove margin between section-one and section-two */
+  .section-one {
+    margin-bottom: 0;
+  }
+
+  .section-two .icon-img {
+    max-width: 60px; /* Adjust the icon size for smaller screens */
+  }
+}
+
+/* Adjust the layout on larger screens (e.g., laptops) */
+@media (min-width: 768px) {
+  .section-one {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .section-one .col-md-6 {
+    width: 50%;
+    margin-bottom: 0; /* Reset margin for laptops */
+  }
+
+  /* Add margin between section-one and section-two for laptops */
+  .section-one {
+    margin-bottom: 20px;
+  }
+
+  .section-two .icon-img {
+    max-width: 80px; /* Set the icon size for larger screens */
+  }
+}
+/* -----------------------custom------------------------ */
+/* Your custom CSS goes here */
+/* Your custom CSS goes here */
+#medverseBox {
+position: relative;
+}
+
+.title-wrapper {
+display: inline-block;
+}
+
+#medverseBox h4 {
+font-size: 50px;
+margin-bottom: 0;
+display: inline; /* Display the h4 and red line inline */
+}
+
+#medverseBox p {
+/* font-size: 40px; */
+font-size: 26px;
+padding-top: 30px;
+margin-top: 10px;
+}
+
+.description-box {
+/* font-size: 30px; */
+font-size: 22px;
+margin-top: 20px;
+}
+
+/* Adjust the layout on small screens (e.g., smartphones) */
+@media (max-width: 767.98px) {
+#medverseBox h4 {
+font-size: 30px;
+}
+
+#medverseBox p {
+font-size: 25px;
+padding-top: 20px;
+}
+
+.description-box {
+font-size: 20px;
+margin-top: 10px;
+}
+}
+
+/* Custom CSS for Section Headers */
+.section-header {
+text-align: center;
+position: relative;
+margin-top: 40px;
+}
+
+.section-header h3 {
+font-size: 40px;
+margin-bottom: 0;
+display: inline;
+}
+
+.section-header p {
+font-size: 30px;
+margin-top: 15px;
+}
+/* ---------------------------custom------------------------ */
+
+
+/* --------------Typewriter------------effect---- */

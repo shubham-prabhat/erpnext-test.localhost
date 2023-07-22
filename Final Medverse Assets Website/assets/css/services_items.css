@@ -1,0 +1,163 @@
+ /*------------ Our-Services-section Start here---------- */
+/* -------Head-line--Start here--- */
+
+/* .head-line {
+  background-color: whitesmoke;
+  text-align: center;
+  margin: 5px;
+  border: 2px;
+} */
+
+
+.head-line {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.head-line h1 {
+  /* background-color: rgb(145, 4, 238); */
+  color: #9550d2;
+  padding: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 3px;
+}
+
+
+/* -------Head-line--Start here--- */
+.our-services-items .container {
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: #fcfcfc;
+  }
+  
+  .our-services-items .box {
+    width: calc(25% - 20px); /* Adjust the width for a 4/4/4 layout */
+    /* margin-top: 20px; */
+    background-color: #f2f2f2;  
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .our-services-items .box img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .our-services-items .box h3 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .our-services-items .container .box h3 {
+    color: purple;
+  }
+  
+  .our-services-items .container .box p {
+    color: red;
+  }
+  
+  /* ---------------Show more button-start------------- */
+  
+   .box:nth-child(n+9) {
+    display: none;
+  }
+  
+  .show-more {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .show-more button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .show-more button:focus {
+    outline: none;
+  }
+  
+  .show-all .box {
+    display: block; 
+  }
+  
+  
+  /* ----Show more and show less-----Button color------ */
+  
+  .show-more button {
+    background-color: #90e890;
+  }
+  #show-less-btn {
+    background-color: rgb(251, 188, 251) ;
+  }
+  /* ---------------Show more button-end------------- */
+
+.Service-care {
+  width: 300px;
+  height: 100px;
+  /* border: 1px solid #ccc; */
+  margin: 2px;
+  padding-top: 10px;
+}
+
+.box-image {
+  width: 300px;
+  height: 200px;
+  /* border: 1px solid #ccc; */
+  margin: 2px;
+  margin-top: 10px;
+}
+
+/* ------------background-image--------- */
+  .our-services-items  {
+    background-image: url(../images/infos-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* padding: 120px 0px; */
+    /* margin-top: 120px; */
+  }
+  /* -------------Our-services section end here -----------*/
+
+
+
+
+  /* ---Start----typewriter-----effect----- */
+
+ .head-line h1 {
+      overflow: hidden; /* Ensure text doesn't wrap */
+      white-space: nowrap; /* Keep text on a single line */
+    }
+
+    .head-line h1::after {
+      content: '|'; /* Cursor character */
+      display: inline-block;
+      vertical-align: bottom;
+      animation: blink-caret .75s step-end infinite;
+    }
+
+    @keyframes blink-caret {
+      50% {
+        opacity: 0;
+      }
+    }
+  /* ---------End---Typewriter----effect----- */
+
+
+
+  .info span {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .info span img {
+    width: 200px;
+    height: 100px;
+    /* border: 1px solid black; */
+  }

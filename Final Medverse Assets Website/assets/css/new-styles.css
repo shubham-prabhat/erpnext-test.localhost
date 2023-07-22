@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+  
+  p {
+    color: #666;
+  }
+
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  #main-content {
+    margin: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .header {
+      padding: 10px;
+    }
+  
+    #main-content {
+      margin: 10px;
+    }
+  }
+
+ 
+ /*-------------- CSS styles for the video element and page content -------*/
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 600px%;
+            z-index: -1;
+        }
+
+        #content {
+            position: relative;
+            z-index: 1;
+        } 
+
+        
+
+        
